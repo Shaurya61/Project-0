@@ -1,0 +1,31 @@
+# dependencies
+/node_modules
+
+# production
+/build
+
+# next.js
+/.next/
+/out/
+
+# testing
+/coverage
+
+# environment files
+.env
+.env.local
+.env.*.local
+
+# editor and OS-specific files
+.DS_Store
+*.pem
+*.log
+*.sublime-project
+*.sublime-workspace
+
+# Typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# Vercel
+.vercel
