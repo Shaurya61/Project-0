@@ -7,7 +7,7 @@ const SignOut = () => {
   return (
     <Button onClick={()=> signOut({
         redirect: true,
-        callbackUrl: `${process.env.NEXTAUTH_URL}/sign-in`
+        callbackUrl: `${process.env.NEXT_PUBLIC_NEXTAUTH_URL}/sign-in`
 
     })}>Sign Out</Button>
         

@@ -7,10 +7,10 @@ interface GoogleSignInButtonProps {
 }
 const GoogleSignInButton: FC<GoogleSignInButtonProps> = ({ children }) => {
   const [Loading, setIsLoading] = useState<boolean>(false);
-  const nextAuthUrl = process.env.NEXTAUTH_URL;
+
   const loginWithGoogle = async () => {
     try {
-      await signIn('google', { callbackUrl: `${nextAuthUrl}/admin` });
+      await signIn('google', { callbackUrl: `${process.env.NEXT_PUBLIC_NEXTAUTH_URL}/admin` });
     } catch (error) {
       setIsLoading(false);
     }
